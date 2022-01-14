@@ -1,0 +1,106 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #666;
+    text-align: center;
+}
+
+.fixed-background {
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+}
+
+.header-footer {
+    height: 100vh;
+    background-image: url(./images/anthony-reungere-s6xt1mwF_iU-unsplash.jpg);
+}
+
+#header {}
+
+#footer {}
+
+.header-footer h1 {
+    font-size: 3rem;
+    font-weight: lighter;
+    padding: 0.5rem 2rem;
+    letter-spacing: 0.4rem;
+    color: whitesmoke;
+    background-color: #333;
+}
+
+#main-content {}
+
+.subsection {
+    padding: 4rem;
+    height: fit-content;
+    display: grid;
+    place-items: center;
+}
+
+#subsection1 {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+#subsection2 {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+#subsection3 {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.subsection h2 {
+    height: fit-content;
+    margin-bottom: 1rem;
+}
+
+.subsection p {
+    height: fit-content;
+}
+
+.image {
+    height: 40vh;
+    color: #ddd;
+}
+
+#image1 {
+    background-image: url(./images/castelmezzano-1979546.jpg);
+}
+
+#image2 {
+    background-image: url(./images/paris-1836415.jpg);
+}
+
+@media only screen and (min-width:1024px) {
+    .subsection h2,
+    .subsection p {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-height:400px) {
+    .image {
+        height: 12rem;
+    }
+}
+
+@media only screen and (min-height:800px) {
+    .image {
+        height: 17rem;
+    }
+}
